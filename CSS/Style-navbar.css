@@ -36,9 +36,24 @@ html{
 }
 
 .nav-link{
-    padding: 1rem;
+    margin: 1rem;
     text-decoration: none;
     color: white;
+    transition: all .3s;
+}
+
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+.nav-link::after{
+    content: "";
+    background-color: white;
+    height: 2px;
+    width: 0%;
+    display: block;
+    transition: all .3s;
 }
 
 .nav-button-login{
@@ -51,4 +66,11 @@ html{
     font-weight: 500;
     color: #864af9;
 
+}
+
+.nav-button-login:hover{
+    background-color: #864af9;
+    border: 2px white solid;
+    color: white;
+    transition: .3s;
 }
